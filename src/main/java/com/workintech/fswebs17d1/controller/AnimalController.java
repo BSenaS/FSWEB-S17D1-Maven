@@ -15,7 +15,9 @@ import java.util.Map;
 public class AnimalController {
     Map<Integer, Animal> animals;
 
-    @Value("${project.developer.fullanme}")
+    //List - Set - Map  ->  Hash - Tree - Linked
+
+    @Value("${project.developer.fullname}")
     private String fullName;
 
     @Value("${course.name}")
@@ -26,6 +28,7 @@ public class AnimalController {
     public void loadAll(){
         this.animals = new HashMap<>();
         this.animals.put(1,new Animal(1,"maymun"));
+        this.animals.put(2,new Animal(2,"kaplan"));
     }
 
 
